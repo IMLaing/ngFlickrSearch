@@ -19,6 +19,7 @@ exports.searchFlickr = function(){
     
     $.getJSON(url, parameters, function(result){
         console.log(result);
+        console.log('you did it!');
     })
 
 }
