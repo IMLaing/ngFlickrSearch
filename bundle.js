@@ -418,12 +418,15 @@
 
 	exports.searchFlickr = function(){
 	    console.log('searchF ran');
-	    var url = "https://api.flickr.com/services/rest/?method=flickr.photos.search";
+	    var url = "https://api.flickr.com/services/rest/";
 	    var parameters = {
 	        api_key: "92fc59789ddf2029562e91f4719d5ee4",
 	        text: "cats",
+	        method: 'flickr.photos.search',
 	        format: 'json',
-	        per_page: 20
+	        per_page: 20,
+	        jsoncallback: '?',
+	        jsonp: 'jsoncallback'
 	    }
 	    var fullUrl = url + '?jsoncallback=?';
 	    
