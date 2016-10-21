@@ -18,7 +18,7 @@ exports.searchFlickr = function(){
     }
     
     $.getJSON(url, parameters, function(result){
-        console.log(result.data);
+        console.log(result);
     })
 
 }
