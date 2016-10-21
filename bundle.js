@@ -51,6 +51,7 @@
 	console.log(contentjs.sayHello()); // content.js has is referenced by contentjs.
 
 	$(document).ready(function(){
+	    console.log('ready from entry.js!');
 	    contentjs.searchFlickr();
 	});
 
@@ -412,15 +413,11 @@
 	exports.sayHello = function() {
 	    return "hello";
 	}
-	exports.sayFu = function() {
-	    return "Get the frack out of here!";
-	}
 
 	exports.searchFlickr = function(){
-	    var url = "https://api.flickr.com/services/rest/?";
+	    var url = "https://api.flickr.com/services/flickr.photos.search/?";
 	    var parameters = {
 	        api_key: "92fc59789ddf2029562e91f4719d5ee4",
-	        user_id: "144306767@N03",
 	        text: "cats",
 	        format: 'json',
 	        per_page: 20
