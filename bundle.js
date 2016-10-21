@@ -424,7 +424,7 @@
 	        per_page: 20
 	    }
 	    
-	    $.getJSON(url, parameters, function(result){
+	    $.getJSON(url+'&jsoncallback=?', parameters, function(result){
 	        console.log(result);
 	        console.log('you did it!');
 	    })
