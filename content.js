@@ -10,7 +10,7 @@ exports.searchFlickr = function(){
     var url = "https://api.flickr.com/services/?method=flickr.photos.search";
     var parameters = {
         api_key: "92fc59789ddf2029562e91f4719d5ee4",
-        text: "cats",
+        tags: "cats",
         format: 'json',
         per_page: 20
     }
