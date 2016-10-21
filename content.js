@@ -21,7 +21,7 @@ exports.searchFlickr = function () {
         nojsoncallback: 1 
     };
     console.log('$.getJson next');
-    $.getJSON(url, parameters, function (result){ 
+    $.getJSON(parameters, function (result){ 
         console.log(result);
         console.log('you did it!');
     });
