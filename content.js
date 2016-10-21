@@ -9,7 +9,7 @@ exports.sayFu = function() {
 }
 
 exports.searchFlickr = function(){
-    var url = "http://api.flickr.com/services";
+    var url = "http://api.flickr.com/services/rest/?";
     var parameters = {
         api_key: "92fc59789ddf2029562e91f4719d5ee4",
         text: 'cats',
