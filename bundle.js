@@ -10656,7 +10656,7 @@
 	        nojsoncallback: 1 
 	    };
 	    console.log('$.getJson next');
-	    $.getJSONP(parameters, function (result){ 
+	    $.getJSON(parameters, function (result){ 
 	        console.log(result);
 	        console.log('you did it!');
 	    });
