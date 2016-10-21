@@ -425,7 +425,7 @@
 	        format: 'json',
 	        per_page: 20
 	    }
-	    var fullUrl = url + '$jsoncallback=?';
+	    var fullUrl = url + '?jsoncallback=?';
 	    
 	    console.log('$.getJson next');
 	    $.getJSON(fullUrl, parameters, function(result){
