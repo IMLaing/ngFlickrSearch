@@ -22,7 +22,7 @@ exports.searchFlickr = function(){
     var fullUrl = url + '?jsoncallback=?';
     
     console.log('$.getJson next');
-    $.getJSON(fullUrl, parameters, function(result){
+    $.getJSON(fullUrl, parameters, jsonFlickrApi){
         console.log(result);
         console.log('you did it!');
     })

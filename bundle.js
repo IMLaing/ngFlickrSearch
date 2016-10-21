@@ -46,7 +46,7 @@
 
 	var $ = __webpack_require__(6);
 	__webpack_require__(1);
-	var contentjs = __webpack_require__(5);
+	var contentjs = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./content.js\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 	console.log(contentjs.sayHello()); // content.js has is referenced by contentjs.
 
@@ -404,44 +404,7 @@
 
 
 /***/ },
-/* 5 */
-/***/ function(module, exports, __webpack_require__) {
-
-	console.log('content.js loaded')
-
-	var $ = __webpack_require__(6);
-	var exports = module.exports = {};
-
-	exports.sayHello = function() {
-	    return "hello";
-	}
-
-	exports.searchFlickr = function(){
-	    console.log('searchF ran');
-	    var url = "https://api.flickr.com/services/rest/";
-	    var parameters = {
-	        api_key: "92fc59789ddf2029562e91f4719d5ee4",
-	        text: "cats",
-	        method: 'flickr.photos.search',
-	        format: 'json',
-	        per_page: 20,
-	        jsoncallback: '?',
-	        jsonp: 'jsoncallback'
-	    }
-	    var fullUrl = url + '?jsoncallback=?';
-	    
-	    console.log('$.getJson next');
-	    $.getJSON(fullUrl, parameters, function(result){
-	        console.log(result);
-	        console.log('you did it!');
-	    })
-
-	}
-
-
-
-
-/***/ },
+/* 5 */,
 /* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
