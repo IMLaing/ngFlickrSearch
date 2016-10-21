@@ -1,0 +1,21 @@
+{
+  "name": "ngflickrsearch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --progress --colors --watch",
+    "lessc": "lessc --source-map index.less style.css",
+    "build": "npm run lessc && webpack"
+  },
+  "author": "IMLaing",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "less": "^2.7.1",
+    "webpack": "^1.13.2"
+  }
+}
