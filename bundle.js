@@ -416,12 +416,13 @@
 	    var url = "https://api.flickr.com/services/rest/?";
 	    var parameters = {
 	        api_key: "92fc59789ddf2029562e91f4719d5ee4",
-	        text: 'cats',
+	        user_id: "144306767@N03",
+	        text: "cats",
 	        per_page: 20
 	    }
 	    
 	    $.getJSON(url, parameters, function(result){
-	        console.log(result);
+	        console.log(result.data);
 	    })
 
 	}
