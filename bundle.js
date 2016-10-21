@@ -418,6 +418,7 @@
 	        api_key: "92fc59789ddf2029562e91f4719d5ee4",
 	        user_id: "144306767@N03",
 	        text: "cats",
+	        format: 'json',
 	        per_page: 20
 	    }
 	    
