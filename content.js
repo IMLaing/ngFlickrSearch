@@ -20,9 +20,9 @@ exports.searchFlickr = function(){
         jsonp: 'jsoncallback'
     }
     var fullUrl = url + '?jsoncallback=?';
-    
+    var jsonFlickrApi = function(){};
     console.log('$.getJson next');
-    $.getJSON(fullUrl, parameters, jsonFlickrApi){
+    $.getJSON(fullUrl, parameters, function(result)){
         console.log(result);
         console.log('you did it!');
     })
