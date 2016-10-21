@@ -44,11 +44,15 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
+	var $ = __webpack_require__(6);
 	__webpack_require__(1);
 	var contentjs = __webpack_require__(5);
 
 	console.log(contentjs.sayHello()); // content.js has is referenced by contentjs.
-	contentjs.searchFlickr();
+
+	$(document).ready(function(){
+	    contentjs.searchFlickr();
+	});
 
 /***/ },
 /* 1 */
