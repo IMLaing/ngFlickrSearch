@@ -16,8 +16,10 @@ exports.searchFlickr = function(){
         format: 'json',
         per_page: 20
     }
+    var fullUrl = url + '$jsoncallback=?';
+    
     console.log('$.getJson next');
-    $.getJSON(url, parameters, function(result){
+    $.getJSON(fullUrl, parameters, function(result){
         console.log(result);
         console.log('you did it!');
     })
