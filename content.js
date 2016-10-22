@@ -1,14 +1,8 @@
+console.log('content.js loaded');
+var $ = require("jquery");
 var exports = module.exports = {};
 
-exports.sayHello = function() {
+exports.sayHello = function () {
     return "hello";
-}
-exports.sayFu = function() {
-    return "Get the frack out of here!";
-}
-
-
-
-
-
+};
 
