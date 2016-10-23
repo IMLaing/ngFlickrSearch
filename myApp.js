@@ -2,23 +2,27 @@ angular.module('myApp', [])
     .controller('myCtrl', function ($http) {
         var vm = this;
         vm.toggle = true;
-        vm.flickrSearch = function () {
+        vm.results;
+        vm.flickrSearch = function (text) {
             console.log('new flickrSearch being ran');
-            var url = "https://api.flickr.com/services/rest/";
+            var url = "https://api.flickr.com/services/rest";
             var request = {
-                apikey: '92fc59789ddf2029562e91f4719d5ee4',
-                tags: "cats",
-                outputMode: 'json',
-                jsonp: "JSON_CALLBACK"
+                method: 'flickr.photos.search',
+                api_key: '92fc59789ddf2029562e91f4719d5ee4',
+                tags: text,
+                format: 'json',
+                nojsoncallback: 1,
+                per_page: 20
             };
             $http({
-                method: 'JSONP',
+                method: 'GET',
                 url: url,
                 params: request
             })
                 .then(function (result) {
                     console.log('Success!');
-                    vm.infoReturned = result.data;
+                    console.log(result.data);
+                    vm.results = result.data.photos.photo;
                 },
                     function (result) {
                         console.log('Failure :(');
@@ -38,7 +42,7 @@ angular.module('myApp', [])
         per_page: 20,
         jsoncallback: '?',
         jsonp: 'jsoncallback',
-        nojsoncallback: 1 
+
     };
     console.log('$.getJson next');
     $.getJSON(parameters, function (result){ 
