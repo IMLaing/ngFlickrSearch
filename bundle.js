@@ -46251,7 +46251,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  background: #FF91AF;\n}\n.searchContainer {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n.galleryView {\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  justify-content: space-around;\n}\n.flickrImageContainer {\n  transition: linear 1s;\n}\n.flck-pic {\n  flex: 1 0 400px;\n}\n.flickrImageContainer.ng-enter,\n.flickrImageContainer.ng-leave.ng-leave-active {\n  opacity: 0;\n}\n.flickrImageContainer.ng-leave,\n.flickrImageContainer.ng-enter.ng-enter-active {\n  opacity: 1;\n}\n.infoDisplay {\n  font-size: 2em;\n  color: #fff000;\n}\n/*# sourceMappingURL=style.css.map */", ""]);
+	exports.push([module.id, "body {\n  background: #FF91AF;\n}\n.searchContainer {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n.galleryView {\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  justify-content: space-around;\n}\n.flickrImageContainer {\n  transition: linear 2s;\n}\n.flck-pic {\n  flex: 1 0 400px;\n  transition: linear 2s;\n}\n.flickrImageContainer.ng-enter,\n.flickrImageContainer.ng-leave.ng-leave-active {\n  opacity: 0;\n}\n.flickrImageContainer.ng-leave,\n.flickrImageContainer.ng-enter.ng-enter-active {\n  opacity: 1;\n}\n.infoDisplay {\n  font-size: 2em;\n  color: #fff000;\n}\n#flckrForm {\n  padding: 30px;\n}\n/*# sourceMappingURL=style.css.map */", ""]);
 
 	// exports
 

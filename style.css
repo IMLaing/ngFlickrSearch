@@ -14,10 +14,11 @@ body {
   justify-content: space-around;
 }
 .flickrImageContainer {
-  transition: linear 1s;
+  transition: linear 2s;
 }
 .flck-pic {
   flex: 1 0 400px;
+  transition: linear 2s;
 }
 .flickrImageContainer.ng-enter,
 .flickrImageContainer.ng-leave.ng-leave-active {
@@ -30,5 +31,8 @@ body {
 .infoDisplay {
   font-size: 2em;
   color: #fff000;
+}
+#flckrForm {
+  padding: 30px;
 }
 /*# sourceMappingURL=style.css.map */
