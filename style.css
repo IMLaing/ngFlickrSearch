@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik');
+* {
+  box-sizing: border-box;
+}
 body {
   background: #FF91AF;
   font-family: 'Rubik', sans-serif;
@@ -13,7 +16,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .flickrImageContainer {
   transition: linear 2s;
@@ -21,6 +24,8 @@ body {
 .flck-pic {
   flex: 1 0 400px;
   transition: linear 2s;
+  box-shadow: 2px 2px 4px black;
+  padding: 10px;
 }
 .flickrImageContainer.ng-enter,
 .flickrImageContainer.ng-leave.ng-leave-active {
