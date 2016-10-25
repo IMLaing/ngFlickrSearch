@@ -46248,10 +46248,10 @@
 
 	exports = module.exports = __webpack_require__(8)();
 	// imports
-
+	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Rubik);", ""]);
 
 	// module
-	exports.push([module.id, "body {\n  background: #FF91AF;\n}\n.searchContainer {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n.galleryView {\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  justify-content: space-around;\n}\n.flickrImageContainer {\n  transition: linear 2s;\n}\n.flck-pic {\n  flex: 1 0 400px;\n  transition: linear 2s;\n}\n.flickrImageContainer.ng-enter,\n.flickrImageContainer.ng-leave.ng-leave-active {\n  opacity: 0;\n}\n.flickrImageContainer.ng-leave,\n.flickrImageContainer.ng-enter.ng-enter-active {\n  opacity: 1;\n}\n.infoDisplay {\n  font-size: 2em;\n  color: #fff000;\n}\n#flckrForm {\n  padding: 30px;\n}\n/*# sourceMappingURL=style.css.map */", ""]);
+	exports.push([module.id, "body {\n  background: #FF91AF;\n  font-family: 'Rubik', sans-serif;\n}\n.searchContainer {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n.galleryView {\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  justify-content: space-around;\n}\n.flickrImageContainer {\n  transition: linear 2s;\n}\n.flck-pic {\n  flex: 1 0 400px;\n  transition: linear 2s;\n}\n.flickrImageContainer.ng-enter,\n.flickrImageContainer.ng-leave.ng-leave-active {\n  opacity: 0;\n}\n.flickrImageContainer.ng-leave,\n.flickrImageContainer.ng-enter.ng-enter-active {\n  opacity: 1;\n}\n.infoDisplay {\n  font-size: 2em;\n  color: #fff000;\n}\n#flckrForm {\n  padding: 30px;\n}\n#flckrForm input {\n  box-shadow: 4px 4px 6px black;\n  padding: 5px;\n  margin: 10px;\n  font-size: 1.2em;\n  border-radius: 5px;\n}\n#flckrForm label {\n  padding: 5px;\n  margin: 10px;\n  font-size: 1.2em;\n}\n/*# sourceMappingURL=style.css.map */", ""]);
 
 	// exports
 

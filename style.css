@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
 body {
   background: #FF91AF;
+  font-family: 'Rubik', sans-serif;
 }
 .searchContainer {
   display: flex;
@@ -34,5 +36,17 @@ body {
 }
 #flckrForm {
   padding: 30px;
+}
+#flckrForm input {
+  box-shadow: 4px 4px 6px black;
+  padding: 5px;
+  margin: 10px;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+#flckrForm label {
+  padding: 5px;
+  margin: 10px;
+  font-size: 1.2em;
 }
 /*# sourceMappingURL=style.css.map */
