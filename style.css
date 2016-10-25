@@ -11,8 +11,24 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
+}
+.flickrImageContainer {
+  transition: linear 1s;
 }
 .flck-pic {
   flex: 1 0 400px;
+}
+.flickrImageContainer.ng-enter,
+.flickrImageContainer.ng-leave.ng-leave-active {
+  opacity: 0;
+}
+.flickrImageContainer.ng-leave,
+.flickrImageContainer.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+.infoDisplay {
+  font-size: 2em;
+  color: #fff000;
 }
 /*# sourceMappingURL=style.css.map */

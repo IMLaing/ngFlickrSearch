@@ -1,9 +1,12 @@
-angular.module('myApp', [])
+angular.module('myApp', [require('angular-animate')])
     .controller('myCtrl', function ($http) {
         var vm = this;
-        vm.toggle = true;
+        vm.textInput='';
+        vm.maxQueryReturn='';
+        vm.infoDisplay = false;
+        vm.currentSearch = [];
         vm.results;
-        vm.flickrSearch = function (text) {
+        vm.flickrSearch = function (text, maxQuery) {
             console.log('new flickrSearch being ran');
             var url = "https://api.flickr.com/services/rest";
             var request = {
@@ -12,7 +15,7 @@ angular.module('myApp', [])
                 tags: text,
                 format: 'json',
                 nojsoncallback: 1,
-                per_page: 20
+                per_page: maxQuery
             };
             $http({
                 method: 'GET',
@@ -22,35 +25,16 @@ angular.module('myApp', [])
                 .then(function (result) {
                     console.log('Success!');
                     console.log(result.data);
+                    vm.currentSearch = [text,maxQuery];
                     vm.results = result.data.photos.photo;
+                    vm.infoDisplay = true;
+                    vm.textInput='';
+                    vm.maxQueryReturn='';
                 },
                     function (result) {
+                        alert('Unable to connect to flickr at this time');
                         console.log('Failure :(');
                     });
         };
     });
 
-
-/*exports.searchFlickr = function () {
-    console.log('searchF ran');
-    var parameters = {
-        url:"",
-        api_key: "",
-        tags: "cats",
-        method: 'flickr.photos.search',
-        format: 'json',
-        per_page: 20,
-        jsoncallback: '?',
-        jsonp: 'jsoncallback',
-
-    };
-    console.log('$.getJson next');
-    $.getJSON(parameters, function (result){ 
-        console.log(result);
-        console.log('you did it!');
-    });
-
-}
-
-
-*/
